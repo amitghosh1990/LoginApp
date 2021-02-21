@@ -5,6 +5,11 @@ import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
+/**
+ * @author AMIT
+ *
+ */
+
 @Entity
 @Table(name = "LOGIN")
 public class UserLogin {

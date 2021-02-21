@@ -5,6 +5,11 @@ import org.springframework.stereotype.Repository;
 
 import com.org.amit.sampleLogin.model.UserDetails;
 
+/**
+ * @author AMIT
+ *
+ */
+
 @Repository
 public interface UserDetailsDao extends CrudRepository<UserDetails, String>{
 

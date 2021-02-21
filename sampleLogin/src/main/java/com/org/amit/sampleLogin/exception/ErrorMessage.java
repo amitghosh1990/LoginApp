@@ -1,5 +1,10 @@
 package com.org.amit.sampleLogin.exception;
 
+/**
+ * @author AMIT
+ *
+ */
+
 public class ErrorMessage {
 
 	private String message;

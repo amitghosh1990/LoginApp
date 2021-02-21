@@ -9,6 +9,12 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.org.amit.sampleLogin.model.UserLogin;
 import com.org.amit.sampleLogin.service.LoginService;
+import com.org.amit.sampleLogin.service.MessageProperty;
+
+/**
+ * @author AMIT
+ *
+ */
 
 @RestController
 public class LoginController {
@@ -22,7 +28,7 @@ public class LoginController {
 		if (loginService.validateUserLogin(userLogin))
 			return new ResponseEntity("Hi, "+ userLogin.getUserName(), HttpStatus.OK);
 		else
-			return new ResponseEntity("Something went wrong.", HttpStatus.INTERNAL_SERVER_ERROR);
+			return new ResponseEntity(MessageProperty.GLOBAL_ERROR, HttpStatus.INTERNAL_SERVER_ERROR);
 
 	}
 
