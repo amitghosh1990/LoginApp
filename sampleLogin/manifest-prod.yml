@@ -1,0 +1,12 @@
+---
+applications:
+- name: loginapp-prod
+  disc_quota: 8G
+  memory: 8G
+  instances: 1
+  path: target/sampleLogin-0.0.1-SNAPSHOT.war
+  routes:
+  - route: <add rout URL for production env>
+  buildpacks:
+  - java_buildpack__offline_4_32_1
+  

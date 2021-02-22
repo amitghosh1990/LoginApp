@@ -1,0 +1,12 @@
+---
+applications:
+- name: loginapp-qa
+  disc_quota: 4G
+  memory: 4G
+  instances: 1
+  path: target/sampleLogin-0.0.1-SNAPSHOT.war
+  routes:
+  - route: <add rout URL for qa env>
+  buildpacks:
+  - java_buildpack__offline_4_32_1
+  

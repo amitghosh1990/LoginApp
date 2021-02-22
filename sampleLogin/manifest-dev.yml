@@ -1,0 +1,12 @@
+---
+applications:
+- name: loginapp-dev
+  disc_quota: 2G
+  memory: 2G
+  instances: 1
+  path: target/sampleLogin-0.0.1-SNAPSHOT.war
+  routes:
+  - route: <add rout URL for dev env>
+  buildpacks:
+  - java_buildpack__offline_4_32_1
+  
