@@ -23,7 +23,7 @@ Central place for handling all exceptions is implemented. Custom exception class
 Public repository has been created in GIT HUB and code has been committed.(https://github.com/amitghosh1990/LoginApp.git )<br>
 Implementation is in progress for role based Authentication using spring security. I will commit security changes as soon as it's done;<br>
 
-<h2><b>Deployment Steps:</b></h2>
+<h2><b>Deployment in local:</b></h2>
 1. cloan repository in local(repository url:https://github.com/amitghosh1990/LoginApp.git)<br>
 2. open eclipse or any suitable IDE and import Maven project from local repository that you have just cloned.<br>
 3. update project and perform maven build( build goal: clean package).<br>
@@ -31,13 +31,13 @@ Implementation is in progress for role based Authentication using spring securit
 5.once deployed, open following url:<br>
 http://localhost:8080/swagger-ui.html<br>
 http://localhost:8080/h2-console<br>
+**The above URL as per local system deployment.<br>
 
-deployment:
+<h2><b>Deployment in cloud:</b></h2>
 
-Use Manifest-<profile>.yml file for PCF deployment in respective environments.Rename only deployment specific file like rename menifest-dev.yml to menifest.yml. all profiles are available in git repository. This file contains rout url,application name, memory/space allocation to run application,java build packetc.<br>
-For AWS deployment, upload your jar in S3 storage and then copy to your EC2 instance and run the jar file. change the packaging as needed, i am using war packaging.<br>
+<b>PCF platform:</b> Use Manifest-<profile>.yml file for PCF deployment in respective environments.Rename only deployment specific file like rename menifest-dev.yml to menifest.yml. all profiles are available in git repository. This file contains rout url,application name, memory/space allocation to run application,java build packetc.<br>
+<b>AWS platform:</b> For AWS deployment, upload your jar in S3 storage and then copy to your EC2 instance and run the jar file. change the packaging as needed, i am using war packaging.<br>
 
-**The above URL as per local system deployment.
 </body>
 </html>
 
